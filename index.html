@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Teste Soulmkt</title>
+    <script src="ajax.js"></script>
+    <style>
+        th {
+            width: 200px;
+            border: 1px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <form action="program.php" method="POST" enctype="multipart/form-data" id="formUpload">
+            <label for="csv">Suba sua planilha: </label>
+            <input type="file" name="csv" id="csv"> <br>
+            <label for="delimitador">Delimitador: </label>
+            <input type="text" name="delimitador" id="delimitador"><br>
+            <input type="button" value="Enviar" onclick="requisitarPagina('program.php')">
+            
+        </form>
+    </main>
+
+    <section id="resposta">
+
+    </section>
+</body>
+</html>
